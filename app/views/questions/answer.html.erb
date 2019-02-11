@@ -1,12 +1,14 @@
-<h1>Stupid Coaching</h1>
-<div>
-  <p><%= @question %></p>
-  <p>-You</p>
-</div>
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <div class="message">
+    <p class="content"><%= @question %></p>
+    <p class="font-italic">-You</p>
+  </div>
 
-<div>
-  <p><%= @answer %></p>
-  <p>-Coach</p>
-</div>
+  <div class="message answer">
+    <p class="content font-bold"><%= @answer %></p>
+    <p class="font-italic">-Coach</p>
+  </div>
 
-<%= link_to "ask a new question", ask_path %>
+  <%= link_to "ask a new question", ask_path %>
+</div>
